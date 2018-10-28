@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"> </script>
+</head>
+<body>
+<h1>
+	Welcome to my project..
+</h1>
+</body>
+<script>
+
+async function createModel()
+{
+  const model = await tf.loadModel('http://www.filefactory.com/file/3lruiugg9jr5/model.json')
+  return model
+}
+async function init(){
+	model = await createModel()
+}
+init()
+</script>
+</html>
